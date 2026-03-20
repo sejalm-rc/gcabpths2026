@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-slate-700 bg-white;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer utilities {
+  .gradient-brand {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+  }
+
+  .gradient-brand-text {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-hero {
+    background: linear-gradient(135deg, #f0f6ff 0%, #eef2ff 50%, #f8faff 100%);
+  }
+
+  .gradient-section {
+    background: linear-gradient(135deg, #f0f6ff, #eef2ff);
+  }
+}
